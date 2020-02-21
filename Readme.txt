@@ -1,3 +1,5 @@
+Pi Model 3B V1.2
+
 [   3V3] 01 02 [    5V]
 [ GPIO2] 03 04 [    5V]
 [ GPIO3] 05 06 [   GND]
@@ -18,13 +20,13 @@ VCC     PIN01
 DATA    PIN07
 GND     PIN14
 
-OLED
+SSD1306 OLED
 GND     PIN06
 VCC     PIN02
 SCL     PIN05
 SDA     PIN03
 
-4Channel Relay
+4-Channel Relayboard
 GND     PIN09
 VCC     PIN04
 IN1     PIN12
