@@ -42,8 +42,11 @@ while True:
         draw.rectangle((0,0, display.width, display.height), outline=0, fill=0)
 
         # Get DHT11 sensor data
-        temperature_c = dht11.temperature
-        humidity = dht11.humidity
+        if dht11.temperature < 100 and dht11.temperature > -100:
+            temperature_c = dht11.temperature
+            humidity = dht11.humidity
+        else:
+            continue
         line1 = 'Temperature: {t}C'.format(t=temperature_c)
         line2 = 'Humidity: {h}%'.format(h=humidity)
 
